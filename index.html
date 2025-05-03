@@ -6,79 +6,83 @@
     <title>Soborna Church - Християнська Церква Соборна</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&family=EB+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #faf9f7;
-            color: #5a5a5a;
+            background-color: #f8f5f2;
+            color: #5a534a;
             scroll-behavior: smooth;
         }
         
         .title-font {
-            font-family: 'Cormorant Garamond', serif;
-            font-weight: 500;
+            font-family: 'Cormorant', serif;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
         
         .subtitle-font {
-            font-family: 'Playfair Display', serif;
+            font-family: 'EB Garamond', serif;
+            font-weight: 500;
         }
         
-        .pastel-blue {
-            background-color: #e8f4f8;
+        .pastel-vanilla {
+            background-color: #f8f5f0;
         }
         
-        .pastel-pink {
-            background-color: #f8e8f1;
+        .pastel-cream {
+            background-color: #f5f0e8;
         }
         
-        .pastel-green {
-            background-color: #e8f8f0;
+        .pastel-beige {
+            background-color: #f0e8e0;
         }
         
-        .pastel-yellow {
-            background-color: #f8f4e8;
+        .pastel-almond {
+            background-color: #ede5dd;
         }
         
-        .pastel-purple {
-            background-color: #f0e8f8;
+        .pastel-latte {
+            background-color: #e8e0d8;
         }
         
-        .pastel-peach {
-            background-color: #f8e8e8;
+        .pastel-cocoa {
+            background-color: #e0d8d0;
         }
         
         .section-divider {
-            height: 2px;
-            background: linear-gradient(90deg, #e8f4f8, #f8e8f1, #e8f8f0, #f8f4e8, #f0e8f8);
-            margin: 2rem 0;
-            opacity: 0.7;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(210, 195, 180, 0.5), transparent);
+            margin: 3rem 0;
         }
         
         .social-card {
             transition: all 0.3s ease;
             border-radius: 12px;
+            border: 1px solid rgba(210, 195, 180, 0.3);
         }
         
         .social-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }
         
         .event-card {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border-radius: 10px;
+            border-radius: 8px;
+            border: 1px solid rgba(210, 195, 180, 0.3);
         }
         
         .event-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.05);
         }
         
         .bible-verse-box {
             position: relative;
             overflow: hidden;
-            border-radius: 15px;
+            border-radius: 12px;
+            border: 1px solid rgba(210, 195, 180, 0.3);
         }
         
         .bible-verse-box::before, .bible-verse-box::after {
@@ -87,7 +91,7 @@
             left: 0;
             right: 0;
             height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(210, 180, 222, 0.5), transparent);
+            background: linear-gradient(90deg, transparent, rgba(210, 195, 180, 0.5), transparent);
         }
         
         .bible-verse-box::before {
@@ -102,7 +106,8 @@
             position: relative;
             overflow: hidden;
             padding-top: 56.25%;
-            border-radius: 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(210, 195, 180, 0.3);
         }
         
         .map-container iframe {
@@ -116,22 +121,26 @@
         
         .social-icon {
             font-size: 1.75rem;
-            margin-bottom: 8px;
+            margin-bottom: 12px;
         }
         
         .social-label {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
+            font-family: 'EB Garamond', serif;
+            font-weight: 500;
             letter-spacing: 0.5px;
+        }
+        
+        .instagram-card {
+            background: linear-gradient(45deg, #f8f5f0, #f0e8e0);
         }
     </style>
 </head>
 <body>
     <!-- Header Section -->
-    <header class="pastel-blue py-16">
+    <header class="pastel-vanilla py-16">
         <div class="container mx-auto px-4 text-center">
             <!-- Logo Placeholder -->
-            <div class="mx-auto w-40 h-40 bg-white rounded-full shadow-sm flex items-center justify-center mb-8 border border-gray-100">
+            <div class="mx-auto w-40 h-40 bg-white rounded-full shadow-sm flex items-center justify-center mb-8 border border-beige-200">
                 <span class="text-4xl title-font text-gray-600">SC</span>
             </div>
             
@@ -143,38 +152,55 @@
     <div class="section-divider"></div>
     
     <!-- Social Media Section -->
-    <section class="py-12 pastel-peach">
+    <section class="py-12 pastel-cream">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-medium title-font text-center text-gray-700 mb-10">МИ В СОЦМЕРЕЖАХ</h2>
             
-            <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
-                <a href="#" class="social-card bg-white p-6 text-center">
-                    <div class="text-pink-500 social-icon">
-                        <i class="fab fa-instagram"></i>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Instagram Card - Highlighted -->
+                <div class="instagram-card rounded-lg p-8 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="social-icon text-gray-700">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3 class="text-2xl subtitle-font text-gray-700 mb-4">Instagram</h3>
+                        <p class="text-gray-600 mb-6 max-w-md mx-auto">Слідкуйте за нашими подіями та натхненням у Instagram</p>
+                        <a href="#" class="px-6 py-2 bg-white rounded-full text-gray-700 border border-beige-300 hover:bg-gray-50 transition-colors">
+                            Перейти до профілю
+                        </a>
                     </div>
-                    <p class="social-label text-gray-600">Instagram</p>
-                </a>
+                </div>
                 
-                <a href="#" class="social-card bg-white p-6 text-center">
-                    <div class="text-red-500 social-icon">
-                        <i class="fab fa-youtube"></i>
-                    </div>
-                    <p class="social-label text-gray-600">YouTube</p>
-                </a>
-                
-                <a href="#" class="social-card bg-white p-6 text-center">
-                    <div class="text-blue-500 social-icon">
-                        <i class="fab fa-telegram"></i>
-                    </div>
-                    <p class="social-label text-gray-600">Telegram</p>
-                </a>
-                
-                <a href="#" class="social-card bg-white p-6 text-center">
-                    <div class="text-blue-600 social-icon">
-                        <i class="fab fa-facebook"></i>
-                    </div>
-                    <p class="social-label text-gray-600">Facebook</p>
-                </a>
+                <!-- Other Social Cards -->
+                <div class="grid grid-cols-2 gap-4">
+                    <a href="#" class="social-card bg-white p-6 text-center">
+                        <div class="text-gray-600 social-icon">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <p class="social-label text-gray-600">YouTube</p>
+                    </a>
+                    
+                    <a href="#" class="social-card bg-white p-6 text-center">
+                        <div class="text-gray-600 social-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <p class="social-label text-gray-600">Telegram</p>
+                    </a>
+                    
+                    <a href="#" class="social-card bg-white p-6 text-center">
+                        <div class="text-gray-600 social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <p class="social-label text-gray-600">Facebook</p>
+                    </a>
+                    
+                    <a href="#" class="social-card bg-white p-6 text-center">
+                        <div class="text-gray-600 social-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <p class="social-label text-gray-600">Email</p>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -182,7 +208,7 @@
     <div class="section-divider"></div>
     
     <!-- Upcoming Events Section -->
-    <section class="py-14 pastel-pink">
+    <section class="py-14 pastel-beige">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-medium title-font text-center text-gray-700 mb-12">НАЙБЛИЖЧІ ПОДІЇ</h2>
             
@@ -195,7 +221,7 @@
     <div class="section-divider"></div>
     
     <!-- Announcement Section -->
-    <section class="py-14 pastel-green">
+    <section class="py-14 pastel-almond">
         <div class="container mx-auto px-4">
             <div class="max-w-3xl mx-auto">
                 <p class="text-xl md:text-2xl text-center text-gray-600 mb-8 leading-relaxed">
@@ -203,7 +229,7 @@
                 </p>
                 
                 <!-- YouTube Video Embed -->
-                <div class="aspect-w-16 aspect-h-9 mt-8 rounded-lg overflow-hidden shadow-sm">
+                <div class="aspect-w-16 aspect-h-9 mt-8 rounded-lg overflow-hidden shadow-sm border border-beige-300">
                     <iframe class="w-full h-96" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
@@ -213,7 +239,7 @@
     <div class="section-divider"></div>
     
     <!-- Bible Verse Section -->
-    <section class="py-20 pastel-yellow">
+    <section class="py-20 pastel-latte">
         <div class="container mx-auto px-4">
             <div class="bible-verse-box max-w-4xl mx-auto bg-white p-12 shadow-sm text-center">
                 <img src="https://images.unsplash.com/photo-1517641397862-711c708d3a1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Cross" class="mx-auto mb-8 rounded-lg w-full max-h-64 object-cover shadow-sm">
@@ -226,7 +252,7 @@
     <div class="section-divider"></div>
     
     <!-- Service Schedule Section -->
-    <section class="py-14 pastel-purple">
+    <section class="py-14 pastel-cocoa">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-medium title-font text-center text-gray-700 mb-12">РОЗКЛАД БОГОСЛУЖІНЬ</h2>
             
@@ -239,7 +265,7 @@
     <div class="section-divider"></div>
     
     <!-- Address Section -->
-    <section class="py-14 pastel-blue">
+    <section class="py-14 pastel-vanilla">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl md:text-4xl font-medium title-font text-center text-gray-700 mb-10">НАША АДРЕСА</h2>
             
@@ -257,7 +283,7 @@
     </section>
     
     <!-- Footer -->
-    <footer class="bg-gray-50 py-8 border-t border-gray-100">
+    <footer class="bg-white py-8 border-t border-beige-300">
         <div class="container mx-auto px-4 text-center">
             <p class="text-gray-500">&copy; 2023 Soborna Church. Всі права захищені.</p>
         </div>
