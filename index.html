@@ -264,23 +264,42 @@
     
     <div class="section-divider"></div>
     
-    <!-- Address Section -->
-    <section class="py-14 pastel-vanilla">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl md:text-4xl font-medium title-font text-center text-gray-700 mb-10">НАША АДРЕСА</h2>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="map-container shadow-sm mb-8">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.123456789012!2d30.123456789012345!3d50.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTDCsDA3JzI0LjQiTiAzMMKwMDcnMjQuNCJF!5e0!3m2!1sen!2sua!4v1234567890123!5m2!1sen!2sua" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                
-                <p class="text-xl text-center text-gray-600 leading-relaxed">
-                    вул. Сагайдачного 20В<br>
-                    Софіївська Борщагівка
-                </p>
-            </div>
+<!-- Address Section -->
+<section class="py-14 pastel-blue">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-medium title-font text-center text-gray-700 mb-10">
+        НАША АДРЕСА
+      </h2>
+      <div class="max-w-4xl mx-auto">
+        <!-- Desktop: embedded map -->
+        <div class="hidden sm:block map-container shadow-sm mb-8">
+          <iframe
+            class="absolute top-0 left-0 w-full h-full"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.9861726063973!2d30.33235737577875!3d50.404095290701434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ca54a3c46723%3A0xb1ea0a395f42f81d!2z0KbQtdGA0LrQstCwINCh0L7QsdC-0YDQvdCw!5e0!3m2!1suk!2sua!4v1746268790302!5m2!1suk!2sua"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
-    </section>
+        <!-- Mobile: fallback link -->
+        <div class="block sm:hidden text-center mb-8">
+          <a
+            href="https://www.google.com/maps?q=50.404095290701434,30.33235737577875"
+            target="_blank"
+            rel="noopener"
+            class="text-blue-600 underline">
+            Відкрити карту в Google Maps
+          </a>
+        </div>
+        <p class="text-xl text-center text-gray-600 leading-relaxed">
+          вул. Сагайдачного 20В<br>
+          Софіївська Борщагівка
+        </p>
+      </div>
+    </div>
+  </section>
+  
     
     <!-- Footer -->
     <footer class="bg-white py-8 border-t border-beige-300">
